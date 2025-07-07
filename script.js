@@ -20,7 +20,7 @@ function checkColorCode() {
   const message = document.getElementById("colorMessage");
 
   if (input === correct) {
-    message.textContent = "✅ Correct! You solved the colour code.";
+    message.textContent = "✅ Correct! You solved the colour puzzle.";
     message.style.color = "#00ff88";
 
 
