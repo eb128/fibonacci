@@ -29,3 +29,27 @@ button {
   margin-top: 20px;
   font-size: 1.2rem;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff44;
+}
+
+.green { background-color: #00ff00; }
+.blue { background-color: #0088ff; }
+.red { background-color: #ff4444; }
+
+.hint {
+  margin-top: 20px;
+  color: #aaa;
+  font-style: italic;
+}
