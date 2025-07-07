@@ -6,10 +6,24 @@ function checkPassword() {
   if (input === correct) {
     message.textContent = "✅ Correct! Get ready for the next puzzle...";
     message.style.color = "#00ff88";
-
-    // Hide step 1, show step 2
     document.getElementById("step1").style.display = "none";
     document.getElementById("step2").style.display = "block";
+  } else {
+    message.textContent = "❌ Incorrect. Try again.";
+    message.style.color = "#ff4444";
+  }
+}
+
+function checkColorCode() {
+  const input = document.getElementById("colorCode").value.trim();
+  const correct = "231221132";
+  const message = document.getElementById("colorMessage");
+
+  if (input === correct) {
+    message.textContent = "✅ Correct! You solved the colour code.";
+    message.style.color = "#00ff88";
+
+
   } else {
     message.textContent = "❌ Incorrect. Try again.";
     message.style.color = "#ff4444";
