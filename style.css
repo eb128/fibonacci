@@ -13,6 +13,7 @@ input[type="text"] {
   background: black;
   color: #00ff88;
   width: 250px;
+  margin-top: 10px;
 }
 
 button {
@@ -25,17 +26,12 @@ button {
   cursor: pointer;
 }
 
-#message {
-  margin-top: 20px;
-  font-size: 1.2rem;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 60px);
   grid-gap: 10px;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px auto 10px;
 }
 
 .cell {
@@ -49,7 +45,13 @@ button {
 .red { background-color: #ff4444; }
 
 .hint {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #aaa;
   font-style: italic;
+}
+
+#message,
+#colorMessage {
+  margin-top: 20px;
+  font-size: 1.2rem;
 }
