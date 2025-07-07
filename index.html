@@ -7,13 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>You've made it this far.</h1>
-  <p>For your next hint: <strong>Look at the URL.</strong><br/>Enter the first 10 digits of this sequence below.</p>
+  <div id="step1">
+    <h1>You've made it this far.</h1>
+    <p>For your next hint: <strong>Look at the URL.</strong><br/>
+    Enter the first 10 digits of this sequence below.</p>
 
-  <input type="text" id="password" placeholder="Enter 10 digits..." />
-  <button onclick="checkPassword()">Submit</button>
+    <input type="text" id="password" placeholder="Enter 10 digits..." />
+    <button onclick="checkPassword()">Submit</button>
 
-  <div id="message"></div>
+    <div id="message"></div>
+  </div>
+
+  <div id="step2" style="display: none;">
+    <h2>RGB Grid Puzzle</h2>
+    <div class="grid">
+      <div class="cell green"></div>
+      <div class="cell blue"></div>
+      <div class="cell red"></div>
+      <div class="cell green"></div>
+      <div class="cell green"></div>
+      <div class="cell red"></div>
+      <div class="cell red"></div>
+      <div class="cell blue"></div>
+      <div class="cell green"></div>
+    </div>
+    <p class="hint">Hint: Remember RGB</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
