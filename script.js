@@ -1,13 +1,15 @@
 function checkPassword() {
   const input = document.getElementById("password").value.trim();
-  const correct = "1123581321"; // first 10 Fibonacci digits
+  const correct = "1123581321";
   const message = document.getElementById("message");
 
   if (input === correct) {
-    message.textContent = "✅ Correct! Proceed to the next step...";
+    message.textContent = "✅ Correct! Get ready for the next puzzle...";
     message.style.color = "#00ff88";
-    // Optionally redirect:
-    // window.location.href = "/nextclue.html";
+
+    // Hide step 1, show step 2
+    document.getElementById("step1").style.display = "none";
+    document.getElementById("step2").style.display = "block";
   } else {
     message.textContent = "❌ Incorrect. Try again.";
     message.style.color = "#ff4444";
