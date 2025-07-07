@@ -20,12 +20,11 @@ function checkColorCode() {
   const message = document.getElementById("colorMessage");
 
   if (input === correct) {
-    message.textContent = "✅ Correct! You solved the colour puzzle.";
-    message.style.color = "#00ff88";
-
-
+    // Hide step 2, show final screen
+    document.getElementById("step2").style.display = "none";
+    document.getElementById("completed").style.display = "block";
   } else {
-    message.textContent = "❌ Incorrect. Try again.";
+    message.textContent = "❌ Incorrect. Try again..";
     message.style.color = "#ff4444";
   }
 }
